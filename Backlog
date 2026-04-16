@@ -3,7 +3,7 @@ Entrée : vide
 [x]Score attendu : 0 -> ITER_1
 
 Entrée : On roll 20 fois 0
-[]Score attendu : 0 -> ITER_2
+[x]Score attendu : 0 -> ITER_2
 
 Entrée : On roll 20 fois 1
 []Score attendu : 20 -> ITER_3

@@ -20,9 +20,15 @@ class GameTest {
 	}
 	
 	@Test
-	void twentyZeroRoll() {
-		game.roll(20);
-		assertEquals(0, game.scoreGame());
+	void twentyRollOfZero() {
+		game.mutipleRolls(20, 0); 
+		assertEquals(0, game.scoreGame()); //roll 20 fois 0
+	}
+	
+	@Test
+	void twentyRollOfOne() {
+		game.mutipleRolls(20, 1); //roll 20 fois 1
+		assertEquals(20, game.scoreGame()); 
 	}
 	
 	
