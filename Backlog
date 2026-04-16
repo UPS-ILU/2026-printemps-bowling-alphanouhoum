@@ -1,6 +1,6 @@
 Niveau 1
 Entrée : vide
-[]Score attendu : 0 -> ITER_1
+[x]Score attendu : 0 -> ITER_1
 
 Entrée : On roll 20 fois 0
 []Score attendu : 0 -> ITER_2

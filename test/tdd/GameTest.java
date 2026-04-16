@@ -18,5 +18,13 @@ class GameTest {
 	void entrerVide() {
 		assertEquals(0, game.scoreGame());
 	}
+	
+	@Test
+	void twentyZeroRoll() {
+		game.roll(20);
+		assertEquals(0, game.scoreGame());
+	}
+	
+	
 
 }
