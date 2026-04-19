@@ -31,7 +31,7 @@ Niveau 5 : extension
 Entrée : 1, 2, 10, 0, 10,
 4, 2, 0, 10, 6, 2, 0, 10,
 6, 4, 8, 2, 2, 8, 8
-[]Score attendu : 131 -> ITER_8
+[x]Score attendu : 131 -> ITER_8
 
 Niveau 6 : génie
 Entrée : On roll 12 fois 10
