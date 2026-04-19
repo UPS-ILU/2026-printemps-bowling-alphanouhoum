@@ -6,10 +6,10 @@ Entrée : On roll 20 fois 0
 [x]Score attendu : 0 -> ITER_2
 
 Entrée : On roll 20 fois 1
-[]Score attendu : 20 -> ITER_3
+[x]Score attendu : 20 -> ITER_3
 
 Entrée : On roll 10 fois 1 et 10 fois 2
-[]Score attendu : 30 -> ITER_4
+[x]Score attendu : 30 -> ITER_4
 
 
 Niveau 2 : spare

@@ -31,6 +31,13 @@ class GameTest {
 		assertEquals(20, game.scoreGame()); 
 	}
 	
+	@Test
+	void scoreThirty() {
+		game.mutipleRolls(10, 1); //roll 10 fois 1
+		game.mutipleRolls(10, 2); //roll 10 fois 2
+		assertEquals(30, game.scoreGame());
+	}
+	
 	
 
 }
