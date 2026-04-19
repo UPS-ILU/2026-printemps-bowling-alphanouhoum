@@ -41,23 +41,32 @@ class GameTest {
 			game.roll(1);
 		}
 		for(int i=0; i<10; i++) {
-			game.roll(2);
+			game.roll(2); 
 		}
 		assertEquals(30, game.scoreGame());
 	}
 	
 	@Test
 	void spare() {
-		game.roll(7); //roll 7
-		game.roll(3); //roll 3
-		game.roll(4); //roll 4
-		for(int i=0; i<17; i++) {
+		game.roll(7); 
+		game.roll(3); 
+		game.roll(4); 
+		for(int i=0; i<17; i++) { 
 			game.roll(0);
 		}
 		assertEquals(18, game.scoreGame());
 	}
 	
-	
+	@Test
+	void strike() {
+		game.roll(10); 
+		game.roll(3); 
+		game.roll(4); 
+		for(int i=0; i<16; i++) { 
+			game.roll(0);
+		}
+		assertEquals(24, game.scoreGame());
+	}
 	
 	
 	

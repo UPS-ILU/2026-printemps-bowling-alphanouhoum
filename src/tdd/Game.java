@@ -5,33 +5,58 @@ import java.util.Iterator;
 public class Game {
 	
 	private int score = 0;
+	private int scoreBonus = 0;
 	private int lancer = 1;
 	private int[] tabScore = new int[20];
 	private boolean spare = false;
+	private boolean strike = false;
+	private int strikeTour;
+	
 	
 	
 	public void roll(int nbQuilleTomber) {
+		tabScore[lancer-1] = nbQuilleTomber;
+		
+		if (strike && strikeTour != 0) {
+			scoreBonus += nbQuilleTomber;
+			strikeTour--;
+			
+		}else {
+			score += scoreBonus;
+			scoreBonus = 0;
+			strike = false;
+		}
+		
 		if (spare) {
 			score += nbQuilleTomber*2;
 			spare = false;
 		}else {
-			score+=nbQuilleTomber;
+			score += nbQuilleTomber;
+			
 		}
 		
-		if (lancer != 0 && lancer%2 == 0 ) {
-			//System.out.println("Nb quille tomber = "+ nbQuilleTomber + " scoreprecedent = "+  tabScore[lancer-2] );
-			if (nbQuilleTomber + tabScore[lancer-2] == 10) {
+		
+		
+		
+		/*Spare pour les deux lance lancer*/
+		if (lancer%2 == 0 && nbQuilleTomber + tabScore[lancer-2] == 10) {
 				spare = true;
-			}else {
-				spare = false;
 			}
-		}
 		
 		
-		//System.out.println("Srore au lancer "+ lancer + " = "+ score);
+		/*Strike premier lancer*/
+		if (lancer%2 != 0 && nbQuilleTomber == 10) {
+				strike = true;
+				strikeTour = 2; //Score x2 pour lees deux prochain tour
+				lancer++;
+			}
+		
+		
+		System.out.println("Quille Tomber = "+ nbQuilleTomber + " Strike ? "+ strike);
+		System.out.println("Srore au lancer "+ lancer + " = "+ score);
 		//System.out.println("Nb lancer ="+lancer+" "+spare);
 		
-		tabScore[lancer-1] = nbQuilleTomber;
+		
 		
 		lancer++;
 	}
