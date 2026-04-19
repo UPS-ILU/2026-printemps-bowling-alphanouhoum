@@ -24,7 +24,7 @@ Niveau 4 : cas général
 Entrée : 1, 2, 10, 0, 10,
 4, 2, 0, 10, 6, 2, 0, 10,
 6, 4, 8, 2, 2, 7
-[]Score attendu : 122 -> ITER_7
+[x]Score attendu : 122 -> ITER_7
 
 
 Niveau 5 : extension

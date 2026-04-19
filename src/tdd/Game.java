@@ -52,8 +52,8 @@ public class Game {
 			}
 		
 		
-		System.out.println("Quille Tomber = "+ nbQuilleTomber + " Strike ? "+ strike);
-		System.out.println("Srore au lancer "+ lancer + " = "+ score);
+		//System.out.println("Quille Tomber = "+ nbQuilleTomber + " Strike ? "+ strike);
+		//System.out.println("Srore au lancer "+ lancer + " = "+ score);
 		//System.out.println("Nb lancer ="+lancer+" "+spare);
 		
 		

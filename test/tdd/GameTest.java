@@ -68,6 +68,15 @@ class GameTest {
 		assertEquals(24, game.scoreGame());
 	}
 	
+	@Test 
+	void generalGame() {
+		int[] entre = {1, 2, 10, 0, 10, 4, 2, 0, 10, 6, 2, 0, 10, 6, 4, 8, 2, 2, 7};
+		for (int i = 0; i < entre.length; i++) {
+			game.roll(entre[i]);
+		}
+		assertEquals(122, game.scoreGame());
+	}
+	
 	
 	
 
