@@ -21,22 +21,44 @@ class GameTest {
 	
 	@Test
 	void twentyRollOfZero() {
-		game.mutipleRolls(20, 0); 
+		for(int i=0; i<20; i++) {
+			game.roll(0);
+		}
 		assertEquals(0, game.scoreGame()); //roll 20 fois 0
 	}
 	
 	@Test
 	void twentyRollOfOne() {
-		game.mutipleRolls(20, 1); //roll 20 fois 1
+		for(int i=0; i<20; i++) {
+			game.roll(1);
+		}				
 		assertEquals(20, game.scoreGame()); 
 	}
 	
 	@Test
 	void scoreThirty() {
-		game.mutipleRolls(10, 1); //roll 10 fois 1
-		game.mutipleRolls(10, 2); //roll 10 fois 2
+		for(int i=0; i<10; i++) {
+			game.roll(1);
+		}
+		for(int i=0; i<10; i++) {
+			game.roll(2);
+		}
 		assertEquals(30, game.scoreGame());
 	}
+	
+	@Test
+	void spare() {
+		game.roll(7); //roll 7
+		game.roll(3); //roll 3
+		game.roll(4); //roll 4
+		for(int i=0; i<17; i++) {
+			game.roll(0);
+		}
+		assertEquals(18, game.scoreGame());
+	}
+	
+	
+	
 	
 	
 
