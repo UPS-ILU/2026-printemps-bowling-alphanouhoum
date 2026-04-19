@@ -35,4 +35,4 @@ Entrée : 1, 2, 10, 0, 10,
 
 Niveau 6 : génie
 Entrée : On roll 12 fois 10
-[]Score attendu : 300 -> ITER_9
+[x]Score attendu : 300 -> ITER_9

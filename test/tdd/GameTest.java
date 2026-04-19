@@ -86,6 +86,13 @@ class GameTest {
 		assertEquals(131, game.scoreGame());
 	}
 	
+	@Test
+	void geni() {
+		for (int i = 0; i < 12; i++) {
+			game.roll(10);
+		}
+		assertEquals(300, game.scoreGame());
+	}
 	
 
 	

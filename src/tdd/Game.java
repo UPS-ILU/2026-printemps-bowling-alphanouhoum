@@ -13,10 +13,6 @@ public class Game {
 	 }
 	
 	
-	
-	
-	
-	
 	public int scoreGame() {
 		int score = 0;
 		int indexLancer = 0;
